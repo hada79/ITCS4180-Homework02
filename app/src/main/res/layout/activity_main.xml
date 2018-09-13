@@ -31,6 +31,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nickname_et"
@@ -69,7 +70,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/undergrad_str" />
+            android:text="@string/undergrad_str"
+            android:checked="true"/>
     </RadioGroup>
 
     <TextView
@@ -127,7 +129,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:max="10"
+        android:max="5"
         android:progress="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +144,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:max="10"
+        android:max="5"
         android:progress="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -157,7 +159,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:max="10"
+        android:max="5"
         android:progress="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

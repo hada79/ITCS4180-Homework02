@@ -2,6 +2,8 @@ package com.jasonhada.homework02;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.RatingBar;
 
 public class DisplayActivity extends AppCompatActivity {
 
@@ -9,5 +11,6 @@ public class DisplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
+
     }
 }
