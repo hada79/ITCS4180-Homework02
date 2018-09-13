@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Homework02</string>
+    <string name="selectStudy_str">Select your study program:</string>
 </resources>
