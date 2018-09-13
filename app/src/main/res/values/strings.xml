@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Homework02</string>
     <string name="selectStudy_str">Select your study program:</string>
+    <string name="structure_str">This course is well structured:</string>
+    <string name="deadlines_str">The assignment deadlines are reasonable:</string>
+    <string name="aligned_str">The course material is aligned with assignments:</string>
+    <string name="submit_str">Submit</string>
+    <string name="graduate_str">Graduate</string>
+    <string name="undergrad_str">Undergratuate</string>
+    <string name="selectAvatar_str">Select your Avatar</string>
+    <string name="displayNickname_str">Nickname:</string>
+    <string name="displayStructure_str">Couse Structure:</string>
+    <string name="displayDeadlines_str">Assignment Deadlines:</string>
+    <string name="displayAlignment_str">Matching Material with Assignments:</string>
 </resources>
