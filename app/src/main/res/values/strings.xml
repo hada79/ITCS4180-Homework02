@@ -12,4 +12,10 @@
     <string name="displayStructure_str">Couse Structure:</string>
     <string name="displayDeadlines_str">Assignment Deadlines:</string>
     <string name="displayAlignment_str">Matching Material with Assignments:</string>
+    <string name="avatar1_str">White female brunette blue eyes</string>
+    <string name="avatar3_str">White female redhead hazel eyes</string>
+    <string name="avatar5_str">Black female afro</string>
+    <string name="avatar2_str">White male blonde brown eyes</string>
+    <string name="avatar4_str">White male brunette brown eyes</string>
+    <string name="avatar6_str">Arab male brown eyes</string>
 </resources>

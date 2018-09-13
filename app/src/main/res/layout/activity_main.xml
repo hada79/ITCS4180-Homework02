@@ -8,7 +8,7 @@
     tools:layout_editor_absoluteY="25dp">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nickname_et"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/selectAvatar_iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -33,7 +33,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_et"
         app:srcCompat="@drawable/select_avatar" />
 
     <TextView
@@ -45,7 +45,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/selectStudy_str"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/selectAvatar_iv" />
 
     <RadioGroup
         android:id="@+id/study_rg"
@@ -73,11 +73,11 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/displayStructure_tv"
+        android:id="@+id/structure_tv"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/structure_str"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/study_rg" />
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/deadlines_str"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/structure_sb" />
@@ -112,7 +112,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/submit_str"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -131,7 +131,7 @@
         android:progress="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/displayStructure_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/structureIndicator_tv" />
 
     <SeekBar
         android:id="@+id/deadlines_sb"
@@ -146,7 +146,7 @@
         android:progress="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deadlines_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/deadlinesIndicator_tv" />
 
     <SeekBar
         android:id="@+id/aligned_sb"
@@ -160,6 +160,36 @@
         android:max="10"
         android:progress="3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alignedIndicator_tv" />
+
+    <TextView
+        android:id="@+id/structureIndicator_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:hint="structure indicator here"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/structure_tv" />
+
+    <TextView
+        android:id="@+id/deadlinesIndicator_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:hint="deadline indicator here"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deadlines_tv" />
+
+    <TextView
+        android:id="@+id/alignedIndicator_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:hint="aligned indicator here"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/aligned_tv" />
 </android.support.constraint.ConstraintLayout>
