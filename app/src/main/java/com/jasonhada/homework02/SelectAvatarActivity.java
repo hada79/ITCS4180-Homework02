@@ -9,6 +9,7 @@ import android.widget.ImageView;
 public class SelectAvatarActivity extends AppCompatActivity {
     static String IMAGE_KEY = "IMAGE KEY";
     Intent main = new Intent(SelectAvatarActivity.this, MainActivity.class);
+    Bundle imgBundle = new Bundle();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +26,8 @@ public class SelectAvatarActivity extends AppCompatActivity {
         av1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img1Bundle = new Bundle();
-                img1Bundle.putInt(IMAGE_KEY, R.drawable.avatar_f_1);
-                main.putExtras(img1Bundle);
+                imgBundle.putInt(IMAGE_KEY, R.drawable.avatar_f_1);
+                main.putExtras(imgBundle);
                 startActivity(main);
                 finish();
             }
@@ -36,9 +36,8 @@ public class SelectAvatarActivity extends AppCompatActivity {
         av2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img2Bundle = new Bundle();
-                img2Bundle.putInt(IMAGE_KEY, R.drawable.avatar_m_1);
-                main.putExtras(img2Bundle);
+                imgBundle.putInt(IMAGE_KEY, R.drawable.avatar_m_1);
+                main.putExtras(imgBundle);
                 startActivity(main);
                 finish();
             }
@@ -47,9 +46,8 @@ public class SelectAvatarActivity extends AppCompatActivity {
         av3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img3Bundle = new Bundle();
-                img3Bundle.putInt(IMAGE_KEY, R.drawable.avatar_f_2);
-                main.putExtras(img3Bundle);
+                imgBundle.putInt(IMAGE_KEY, R.drawable.avatar_f_2);
+                main.putExtras(imgBundle);
                 startActivity(main);
                 finish();
             }
@@ -58,9 +56,8 @@ public class SelectAvatarActivity extends AppCompatActivity {
         av4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img4Bundle = new Bundle();
-                img4Bundle.putInt(IMAGE_KEY, R.drawable.avatar_m_2);
-                main.putExtras(img4Bundle);
+                imgBundle.putInt(IMAGE_KEY, R.drawable.avatar_m_2);
+                main.putExtras(imgBundle);
                 startActivity(main);
                 finish();
             }
@@ -69,9 +66,8 @@ public class SelectAvatarActivity extends AppCompatActivity {
         av5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img5Bundle = new Bundle();
-                img5Bundle.putInt(IMAGE_KEY, R.drawable.avatar_f_3);
-                main.putExtras(img5Bundle);
+                imgBundle.putInt(IMAGE_KEY, R.drawable.avatar_f_3);
+                main.putExtras(imgBundle);
                 startActivity(main);
                 finish();
             }
@@ -80,9 +76,8 @@ public class SelectAvatarActivity extends AppCompatActivity {
         av6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img6Bundle = new Bundle();
-                img6Bundle.putInt(IMAGE_KEY, R.drawable.avatar_m_3);
-                main.putExtras(img6Bundle);
+                imgBundle.putInt(IMAGE_KEY, R.drawable.avatar_m_3);
+                main.putExtras(imgBundle);
                 startActivity(main);
                 finish();
             }
