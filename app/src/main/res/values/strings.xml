@@ -18,4 +18,5 @@
     <string name="avatar2_str">White male blonde brown eyes</string>
     <string name="avatar4_str">White male brunette brown eyes</string>
     <string name="avatar6_str">Arab male brown eyes</string>
+    <string name="neutral_str">Neutral</string>
 </resources>

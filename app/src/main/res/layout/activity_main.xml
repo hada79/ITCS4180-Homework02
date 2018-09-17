@@ -9,6 +9,7 @@
 
     <EditText
         android:id="@+id/nickname_et"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -17,6 +18,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Nickname"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ Tes"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/undergrad_str"
-            android:checked="true"/>
+            android:checked="false"/>
     </RadioGroup>
 
     <TextView
@@ -82,7 +84,8 @@
         android:layout_marginTop="8dp"
         android:text="@string/structure_str"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/study_rg" />
+        app:layout_constraintTop_toBottomOf="@+id/study_rg"
+        android:layout_width="wrap_content" />
 
     <TextView
         android:id="@+id/deadlines_tv"
@@ -123,14 +126,15 @@
     <SeekBar
         android:id="@+id/structure_sb"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:max="5"
-        android:progress="3"
+        android:max="4"
+        android:progress="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/structureIndicator_tv" />
@@ -138,14 +142,15 @@
     <SeekBar
         android:id="@+id/deadlines_sb"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:max="5"
-        android:progress="3"
+        android:max="4"
+        android:progress="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deadlinesIndicator_tv" />
@@ -153,14 +158,15 @@
     <SeekBar
         android:id="@+id/aligned_sb"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="32dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:max="5"
-        android:progress="3"
+        android:max="4"
+        android:progress="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alignedIndicator_tv" />
@@ -171,7 +177,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:hint="structure indicator here"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/structure_tv" />
 
@@ -181,7 +186,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:hint="deadline indicator here"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deadlines_tv" />
 
@@ -191,7 +195,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:hint="aligned indicator here"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/aligned_tv" />
+
 </android.support.constraint.ConstraintLayout>

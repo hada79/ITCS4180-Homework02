@@ -7,8 +7,14 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class SelectAvatarActivity extends AppCompatActivity {
-    static String IMAGE_KEY = "IMAGE KEY";
-    Intent main = new Intent(SelectAvatarActivity.this, MainActivity.class);
+    public static String IMAGE_KEY = "IMAGE KEY";
+
+    void returnImageId(int id) {
+        Intent i = new Intent();
+        i.putExtra(IMAGE_KEY, id);
+        setResult(RESULT_OK, i);
+        finish();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,66 +31,42 @@ public class SelectAvatarActivity extends AppCompatActivity {
         av1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img1Bundle = new Bundle();
-                img1Bundle.putInt(IMAGE_KEY, R.drawable.avatar_f_1);
-                main.putExtras(img1Bundle);
-                startActivity(main);
-                finish();
+                returnImageId(R.drawable.avatar_f_1);
             }
         });
 
         av2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img2Bundle = new Bundle();
-                img2Bundle.putInt(IMAGE_KEY, R.drawable.avatar_m_1);
-                main.putExtras(img2Bundle);
-                startActivity(main);
-                finish();
+                returnImageId(R.drawable.avatar_m_3);
             }
         });
 
         av3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img3Bundle = new Bundle();
-                img3Bundle.putInt(IMAGE_KEY, R.drawable.avatar_f_2);
-                main.putExtras(img3Bundle);
-                startActivity(main);
-                finish();
+                returnImageId(R.drawable.avatar_f_2);
             }
         });
 
         av4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img4Bundle = new Bundle();
-                img4Bundle.putInt(IMAGE_KEY, R.drawable.avatar_m_2);
-                main.putExtras(img4Bundle);
-                startActivity(main);
-                finish();
+                returnImageId(R.drawable.avatar_m_2);
             }
         });
 
         av5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img5Bundle = new Bundle();
-                img5Bundle.putInt(IMAGE_KEY, R.drawable.avatar_f_3);
-                main.putExtras(img5Bundle);
-                startActivity(main);
-                finish();
+                returnImageId(R.drawable.avatar_f_3);
             }
         });
 
         av6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle img6Bundle = new Bundle();
-                img6Bundle.putInt(IMAGE_KEY, R.drawable.avatar_m_3);
-                main.putExtras(img6Bundle);
-                startActivity(main);
-                finish();
+                returnImageId(R.drawable.avatar_m_1);
             }
         });
     }

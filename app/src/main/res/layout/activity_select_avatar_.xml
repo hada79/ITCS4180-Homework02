@@ -35,7 +35,8 @@
         android:src="@drawable/avatar_f_1"
         app:layout_constraintEnd_toStartOf="@+id/avatar2_iv"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectAvatar_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/selectAvatar_tv"
+        app:srcCompat="@drawable/avatar_f_1" />
 
     <ImageView
         android:id="@+id/avatar2_iv"
@@ -50,7 +51,8 @@
         android:src="@drawable/avatar_m_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/avatar1_iv"
-        app:layout_constraintTop_toBottomOf="@+id/selectAvatar_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/selectAvatar_tv"
+        app:srcCompat="@drawable/avatar_m_3" />
 
     <ImageView
         android:id="@+id/avatar3_iv"
@@ -65,7 +67,8 @@
         android:src="@drawable/avatar_f_2"
         app:layout_constraintEnd_toStartOf="@+id/avatar4_iv"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatar1_iv" />
+        app:layout_constraintTop_toBottomOf="@+id/avatar1_iv"
+        app:srcCompat="@drawable/avatar_f_2" />
 
     <ImageView
         android:id="@+id/avatar4_iv"
@@ -80,7 +83,8 @@
         android:src="@drawable/avatar_m_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/avatar3_iv"
-        app:layout_constraintTop_toBottomOf="@+id/avatar2_iv" />
+        app:layout_constraintTop_toBottomOf="@+id/avatar2_iv"
+        app:srcCompat="@drawable/avatar_m_2" />
 
     <ImageView
         android:id="@+id/avatar5_iv"
@@ -95,7 +99,8 @@
         android:src="@drawable/avatar_f_3"
         app:layout_constraintEnd_toStartOf="@+id/avatar6_iv"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatar3_iv" />
+        app:layout_constraintTop_toBottomOf="@+id/avatar3_iv"
+        app:srcCompat="@drawable/avatar_f_3" />
 
     <ImageView
         android:id="@+id/avatar6_iv"
@@ -110,5 +115,6 @@
         android:src="@drawable/avatar_m_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/avatar5_iv"
-        app:layout_constraintTop_toBottomOf="@+id/avatar4_iv" />
+        app:layout_constraintTop_toBottomOf="@+id/avatar4_iv"
+        app:srcCompat="@drawable/avatar_m_1" />
 </android.support.constraint.ConstraintLayout>
